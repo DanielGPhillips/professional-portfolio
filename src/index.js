@@ -2,11 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+
+import Navibar from "./components/Navibar";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+        <Navibar />
+        <App />
+
+        {/*Router Setup*/}
+        <Routes>
+          <Route exact path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
