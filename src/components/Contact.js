@@ -14,7 +14,7 @@ const schema = Yup.object().shape({
 
 function Contact() {
   return (
-      <Container>
+      <Container className='text-center'>
         <Formik
         validationSchema={schema}
         onSubmit={console.log}
@@ -37,7 +37,7 @@ function Contact() {
             
             <Form noValidate onSubmit={handleSubmit}>  
             <Row className="mb-3">
-                <Form.Group as={Col} md="4" controlId="validationFormik01">
+                <Form.Group as={Col} md="6" controlId="validationFormik01">
                 <Form.Label className="text-white">First name</Form.Label>
                 <Form.Control
                     type="text"
@@ -48,7 +48,7 @@ function Contact() {
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="4" controlId="validationFormik02">
+                <Form.Group as={Col} md="6" controlId="validationFormik02">
                 <Form.Label className="text-white">Last name</Form.Label>
                 <Form.Control
                     type="text"
@@ -62,7 +62,7 @@ function Contact() {
                 </Form.Group>
             </Row>
             <Row>
-                <Form.Group as={Col} md="4" controlId="validationFormikEmail">
+                <Form.Group  controlId="validationFormikEmail">
                 <Form.Label className="text-white">Email</Form.Label>
                     <Form.Control
                     type="text"                  
@@ -79,11 +79,12 @@ function Contact() {
                 </Form.Group>
             </Row>
             <Row className="mb-3">
-                    <Form.Group as={Col} md="6" controlId="validationFormikMessage">
+                    <Form.Group  controlId="validationFormikMessage">
                     <Form.Label className="text-white">Message</Form.Label>
                     <Form.Control
-                        type="textarea"
-                        rows={3}
+                        type="text"
+                        as= "textarea"
+                        rows={10}
                         placeholder="Enter your message here."
                         name="message"
                         value={values.message}
