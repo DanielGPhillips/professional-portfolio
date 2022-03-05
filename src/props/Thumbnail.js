@@ -10,7 +10,8 @@ function Thumbnail(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle>{props.tech}</Card.Subtitle>
         <Card.Text>{props.description}</Card.Text>
-        <Card.Link href={props.link}>{props.linkType}</Card.Link>
+        <Card.Link href={props.gLink}>See GitHub Repo</Card.Link>
+        <Card.Link href={props.dLink}>See Deployed Site</Card.Link>
       </Card.Body>
     </Card>
   );
