@@ -4,7 +4,7 @@ import '../App.css'
 function Contact() {
     return (
         <div>
-            <h1>Contact</h1>
+            <h1 className='text-center text-white'>Contact</h1>
         </div>
     );
 }
