@@ -14,7 +14,6 @@ function Navibar() {
               <Nav className="mr-auto">
                 <LinkContainer to="/">
                   <Nav.Link>
-                      
                       About
                   </Nav.Link>
                 </LinkContainer>

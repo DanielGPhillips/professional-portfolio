@@ -11,13 +11,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import Footerish from "./components/Footerish";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-        <Navibar />
+        <Navibar />        
         <App />
-
+        <Footerish />
         {/*Router Setup*/}
         <Routes>
           <Route exact path="/" element={<About />} />
