@@ -1,4 +1,4 @@
-import React from 'react'; // Import the Component component from React
+import React from 'react'; 
 import { Card } from 'react-bootstrap';
 import '../App.css';
  
