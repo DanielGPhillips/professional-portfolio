@@ -1,6 +1,11 @@
+//React Import
 import React from 'react';
-import Thumbnail from '../props/Thumbnail';
 
+// MUI Component Import
+import Box from '@mui/material/Box';
+
+// Asset Import
+import Thumbnail from '../props/Thumbnail';
 import EmeraldThumb from '../emerald-thumb-img.png';
 import Glenda from '../glenda-img.png';
 import Vycelium from '../vycelium-icon.png';
@@ -8,14 +13,12 @@ import MathImg from '../math-stock.jpeg';
 import PlannerImg from '../planner-stock.jpg';
 import QuizImg from '../quiz-stock.jpg';
 
-import { Container, CardGroup,  } from 'react-bootstrap';
-import '../App.css'
 
-function Portfolio() {
+export default function Projects() {
     return (
-        <Container bg="dark" text="white" fluid>
-            <h1 className="text-center text-white">Portfolio</h1>
-            <CardGroup>
+        <Box>
+            <h1>Portfolio</h1>
+            <Box>
                 <Thumbnail
                 gLink="https://github.com/DanielGPhillips/vycelium"
                 dLink=""
@@ -40,8 +43,8 @@ function Portfolio() {
                     tech="JavaScript/HTML/CSS"
                     description="A simple app designed to help with grocery and meal planning. I wrote 90%+ of the codebase for this project."
                 />
-            </CardGroup>
-            <CardGroup>
+            </Box>
+            <Box>
                 <Thumbnail
                 gLink="https://github.com/DanielGPhillips/work-day-scheduler"
                 dLink="https://danielgphillips.github.io/work-day-scheduler/"
@@ -66,9 +69,8 @@ function Portfolio() {
                     tech="JavaScript/HTML/CSS"
                     description="A simple little quiz app with timer."
                 />
-            </CardGroup>
-        </Container>
+            </Box>
+        </Box>
     )
 }
 
-export default Portfolio;

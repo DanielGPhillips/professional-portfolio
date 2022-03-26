@@ -1,32 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { CssBaseline, createTheme, ThemeProvider } from '@mui/material';
+import { StyledEngineProvider } from '@mui/material/styles';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
-import Navibar from "./components/Navibar";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
-import Footerish from "./components/Footerish";
+const theme = createTheme ({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#43a047',
+    },
+    secondary: {
+      main: '#9ccc65',
+    },
+    error: {
+      main: '#ff80ab',
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-        <Navibar />        
-        <App />
-        <Footerish />
-        {/*Router Setup*/}
-        <Routes>
-          <Route exact path="/" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-    </Router>
+    <StyledEngineProvider injectFirst>  
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <App />
+        </ThemeProvider>
+      </StyledEngineProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

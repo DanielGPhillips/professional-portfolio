@@ -1,11 +1,21 @@
+// React Import
 import React from 'react';
-import './App.css';
-import Footerish from './components/Footerish';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// MUI Imports
+
+
+// Asset Imports
+import Routing from './utils/Routing';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
-    <div className='App'>
-    </div>
+    <Router>
+      <Navbar />      
+      <Routing />
+    </Router>   
   );
 }
 

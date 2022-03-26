@@ -1,6 +1,6 @@
 import React from 'react'; 
-import { Card } from 'react-bootstrap';
-import '../App.css';
+import Card from '@mui/material/Card';
+
  
 function Thumbnail(props) {
   return (
