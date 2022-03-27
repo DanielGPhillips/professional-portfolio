@@ -41,7 +41,7 @@ export default function Contact() {
             <Paper elevation={1} padding={10} sx={{ width: '80vw', textAlign: 'center'}}>
                 <form onSubmit={formik.handleSubmit}>
                     <Typography variant="h2">Contact Form</Typography>  
-                    <Grid container direction="row" mb={2} spacing={1} padding={2}>                    
+                    <Grid container direction="row"  spacing={2} padding={2}>                    
                         <Grid item xs={12} sm={6}>
                             <TextField 
                             fullWidth

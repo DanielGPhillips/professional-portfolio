@@ -8,7 +8,7 @@ import Box from '@mui/material/Box'
 
 export default function Home() {
     return (
-        <Box mt={10}>
+        <Box display="flex" alignItems="center" justifyContent="center" alignText="center">
             <h1> Welcome to my Portfolio </h1>
         </Box>
     )
