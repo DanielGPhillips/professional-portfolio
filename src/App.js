@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 // Asset Imports
 import Routing from './utils/Routing';
 import Navbar from './components/Navbar';
+import ContactButton from './components/ContactButton';
 
 
 function App() {
@@ -19,8 +20,17 @@ function App() {
           <Grid item>
             <Navbar />
           </Grid>
-          <Grid item>     
-            <Routing />
+          <Grid item>
+            {/* <Grid container direction="row">    
+              <Grid item xs={0} sm={1} md={2} />
+              <Grid item xs={12} sm={10} md={8}> */}
+                <Routing />
+              {/* </Grid>
+              <Grid item xs={0} sm={1} md={2} />
+            </Grid>  */}
+          </Grid>
+          <Grid item>
+            <ContactButton />
           </Grid>
         </Grid>
       </Box> 
