@@ -38,7 +38,7 @@ export default function Home() {
                         <Typography variant="h1">
                             Daniel Phillips
                         </Typography>
-                        <Typography variant="h3">
+                        <Typography display="inline-block" variant="h3" color="primary">
                             Full stack developer | Graphic Artist
                         </Typography>
                         <Typography variant="h6">
@@ -50,12 +50,12 @@ export default function Home() {
                         <Typography>
                             Find Me On:
                         </Typography>
-                        <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={1}>
+                        <Stack direction="row" divider={<Divider orientation="vertical" color="primary" flexItem />} spacing={1}>
                             <IconButton href="https://github.com/DanielGPhillips">
-                                <GithubIcon fontSize="large" />
+                                <GithubIcon fontSize="large" color="secondary"/>
                             </IconButton>
                             <IconButton href="https://www.linkedin.com/in/daniel-g-phillips/">
-                                <LinkedInIcon fontSize="large" />
+                                <LinkedInIcon fontSize="large" color="secondary"/>
                             </IconButton>
                         </Stack>
                     </Stack>    
