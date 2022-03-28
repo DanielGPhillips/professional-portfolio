@@ -12,7 +12,10 @@ import IconButton from '@mui/material/IconButton';
 import Image from 'mui-image';
 // MUI Icon Import
 import GithubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import BuildIcon from '@mui/icons-material/Build';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import DownloadIcon from '@mui/icons-material/Download';
 // Asset Import
 
 export default function Home() {
@@ -47,17 +50,45 @@ export default function Home() {
                         <Typography>
                             -University of Washington Full Stack Web Development Bootcamp Graduate
                         </Typography>
-                        <Typography>
-                            Find Me On:
-                        </Typography>
-                        <Stack direction="row" divider={<Divider orientation="vertical" color="primary" flexItem />} spacing={1}>
-                            <IconButton href="https://github.com/DanielGPhillips">
-                                <GithubIcon fontSize="large" color="secondary"/>
-                            </IconButton>
-                            <IconButton href="https://www.linkedin.com/in/daniel-g-phillips/">
-                                <LinkedInIcon fontSize="large" color="secondary"/>
-                            </IconButton>
-                        </Stack>
+                        <Grid item container direction="row" spacing={1} textAlign="center">
+                            <Grid item xs={12} md={3}>
+                                <Typography sx={{ textDecoration: "underline", textDecorationColor: "#43a047" }}>
+                                    Find Me On
+                                </Typography>
+                                <Stack direction="row" spacing={1} alignItems="center" justifyContent="center">
+                                    <IconButton href="https://github.com/DanielGPhillips">
+                                        <GithubIcon fontSize="large" color="secondary"/>
+                                    </IconButton>
+                                    <IconButton href="https://www.linkedin.com/in/daniel-g-phillips/">
+                                        <LinkedInIcon fontSize="large" color="secondary"/>
+                                    </IconButton>
+                                </Stack>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <Typography sx={{ textDecoration: "underline", textDecorationColor: "#43a047" }}>
+                                    My work
+                                </Typography>                                
+                                <IconButton>
+                                    <BuildIcon fontSize="large" color="secondary"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <Typography sx={{ textDecoration: "underline", textDecorationColor: "#43a047" }}>
+                                    About me
+                                </Typography>                                
+                                <IconButton>
+                                    <AccountBoxIcon fontSize="large" color="secondary"/>
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <Typography sx={{ textDecoration: "underline", textDecorationColor: "#43a047" }}>
+                                    Download Resume
+                                </Typography>                                
+                                <IconButton>
+                                    <DownloadIcon fontSize="large" color="secondary"/>
+                                </IconButton>
+                            </Grid>
+                        </Grid>
                     </Stack>    
                 </Grid>
             </Grid>

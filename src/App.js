@@ -10,6 +10,7 @@ import Paper from '@mui/material/Paper';
 // Asset Imports
 import Routing from './utils/Routing';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import Skills from './components/Skills';
 import ContactButton from './components/ContactButton';
 
@@ -24,7 +25,7 @@ function App() {
           </Grid>
           <Grid item>
             <Paper variant="outlined" padding={5}>
-              <Routing />
+              <Home />
               <Skills />
             </Paper>
           </Grid>
