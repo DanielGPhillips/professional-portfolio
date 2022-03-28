@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CssBaseline, createTheme, ThemeProvider } from '@mui/material';
+import { CssBaseline, createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material';
 import { StyledEngineProvider } from '@mui/material/styles';
+import '@fontsource/koulen/400.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const theme = createTheme ({
+let theme = createTheme ({
   palette: {
     mode: 'dark',
     primary: {
@@ -18,7 +19,12 @@ const theme = createTheme ({
       main: '#ff80ab',
     },
   },
+  typography: {
+    fontFamily: 'koulen, cursive'
+  }
 });
+
+theme = responsiveFontSizes(theme)
 
 ReactDOM.render(
   <React.StrictMode>
