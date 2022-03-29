@@ -11,7 +11,9 @@ import Paper from '@mui/material/Paper';
 import Routing from './utils/Routing';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import ArrowDown from './components/ArrowDown';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import ContactButton from './components/ContactButton';
 
 
@@ -24,10 +26,10 @@ function App() {
             <Navbar />
           </Grid>
           <Grid item>
-            <Paper variant="outlined" padding={5}>
-              <Home />
-              <Skills />
-            </Paper>
+            <Home />
+            <ArrowDown sectionTitle="Check out My Skills"/>
+            <Skills />
+            <Projects />            
           </Grid>
           <Grid item>
             <ContactButton />

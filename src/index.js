@@ -6,22 +6,51 @@ import '@fontsource/koulen/400.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// let theme = createTheme ({
+//   palette: {
+//     mode: 'dark',
+//     primary: {
+//       main: '#43a047',
+//     },
+//     secondary: {
+//       main: '#9ccc65',
+//     },
+//     error: {
+//       main: '#ff80ab',
+//     },
+//   },
+//   typography: {
+//     fontFamily: 'koulen, cursive'
+//   }
+// });
+
 let theme = createTheme ({
   palette: {
-    mode: 'dark',
+    type: 'dark',
     primary: {
-      main: '#43a047',
+      main: '#5994ce',
     },
     secondary: {
-      main: '#9ccc65',
+      main: '#5c58b6',
     },
     error: {
-      main: '#ff80ab',
+      main: '#ff0053',
+    },
+    text: {
+      primary: '#e1f5fe',
+    },
+    background: {
+      default: '#131629',
+      paper: '#151c35',
+    },
+    divider: '#b957ce',
+    info: {
+      main: '#9575cd',
     },
   },
   typography: {
     fontFamily: 'koulen, cursive'
-  }
+  },
 });
 
 theme = responsiveFontSizes(theme)

@@ -6,8 +6,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import Image from 'mui-image';
+import Paper from '@mui/material/Paper';
 // MUI Icon Import
 
 
@@ -17,7 +17,7 @@ export default function Skills() {
         <Box display="flex" alignItems="center" justifyContent="center" padding={2}>
             <Grid container spacing={2}>
                 <Grid item xs={12} textAlign="center">
-                    <Typography variant="h2" color="primary"> 
+                    <Typography variant="h2" color="primary" sx={{ textDecoration: "underline", textDecorationColor: "#b957ce"}}> 
                         Skills
                     </Typography>
                 </Grid>
@@ -29,7 +29,7 @@ export default function Skills() {
                                     <Typography variant="h5">Front End</Typography>
                                     <Divider color="primary"/>
                                 </Grid>
-                                <Paper elvation={2}>
+                                <Paper>                               
                                     <Grid item>
                                         <Grid container item direction="row" spacing={2} padding={2}>
                                             <Grid item>
@@ -56,7 +56,7 @@ export default function Skills() {
                                             </Grid>
                                         </Grid>
                                     </Grid>
-                                </Paper>
+                                </Paper>                                 
                             </Grid>                                              
                         </Grid>
                         <Grid item xs={12} md={4}>
@@ -65,7 +65,7 @@ export default function Skills() {
                                     <Typography variant="h5">Back End</Typography>
                                     <Divider color="primary"/>
                                 </Grid>
-                                <Paper elevation={2}>
+                                <Paper>
                                     <Grid item>
                                         <Grid container item direction="row" spacing={2} padding={2}>
                                             <Grid item>
@@ -92,7 +92,7 @@ export default function Skills() {
                                             </Grid>
                                         </Grid>
                                     </Grid>
-                                </Paper>
+                                </Paper>                                
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={4}>
@@ -101,7 +101,7 @@ export default function Skills() {
                                     <Typography variant="h5">Tools</Typography>
                                     <Divider color="primary" />
                                 </Grid>
-                                <Paper elvation={2}>
+                                <Paper>                               
                                     <Grid item>
                                         <Grid container item direction="row" spacing={2} padding={2}>
                                             <Grid item>
@@ -128,7 +128,7 @@ export default function Skills() {
                                             </Grid>
                                         </Grid>
                                     </Grid>
-                                </Paper>
+                                </Paper>                                 
                             </Grid>
                         </Grid>
                     </Grid>
