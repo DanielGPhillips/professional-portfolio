@@ -10,9 +10,16 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
+import IconButton from '@mui/material/IconButton';
+
+// MUI Icon Import
+import GitHubIcon from '@mui/icons-material/GitHub';
+import WebsiteIcon from '@mui/icons-material/Language';
 
 // Asset Import
 import VyceliumImage from '../assets/projects/vycelium-full.png';
+import EmeraldThumb from '../assets/projects/emerald_thumb_resized.png';
+import Glenda from '../assets/projects/glenda-img.png';
 
 export default function Projects() {
     
@@ -25,12 +32,73 @@ export default function Projects() {
                     </Typography>
                 </Grid>
                 <Grid item>
-                    <Box>
-                        <Card sx={{ maxWidth: 345 }}>
-                            <CardHeader title="Vycelium"/>
-                            <CardMedia component="img" height="100%" fit="contain" image={VyceliumImage} alt="vycelium icon" />
-                        </Card>
-                    </Box>
+                    <Grid container direction="row" spacing={2}>
+                        <Grid item xs={12} sm={4}>
+                            <Card>
+                                <CardHeader title="Vycelium"/>
+                                <CardMedia component="img" height="100%" image={VyceliumImage} alt="vycelium icon" sx={{ objectFit: "contain" }}/>
+                                <CardContent>
+                                    <Typography variant="h6">
+                                        Social Media App
+                                    </Typography>
+                                    <Typography variant="body">
+                                        Focuses on user profile customization .
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <IconButton href="https://github.com/DanielGPhillips/vycelium">
+                                        <GitHubIcon fontSize="medium" color="secondary" />    
+                                    </IconButton>                                    
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
+                            <Card>
+                                <CardHeader title="Emerald Thumb" />
+                                <CardMedia component="img" height="100%" image={EmeraldThumb} alt="Emerald Thumb icon" sx={{ objectFit: "contain" }} />
+                                <CardContent>
+                                    <Typography variant="h6">
+                                        Square Foot Garden Planning App  
+                                    </Typography>
+                                    <Typography variant="body">
+                                        This was a group project. I was responsible for garden visualization, graphical assets, seeding the database, and aiding with javascript functionality. 
+                                        <br />
+                                        Use username dev2 and password to login in to a demo account.
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <IconButton href="https://github.com/carterfm/How-Does-Your-Garden-Grow-">
+                                        <GitHubIcon fontSize="medium" color="secondary" />    
+                                    </IconButton>
+                                    <IconButton href="https://serene-dusk-36944.herokuapp.com/">
+                                        <WebsiteIcon fontSize="medium" color="secondary" />    
+                                    </IconButton> 
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
+                            <Card>
+                                <CardHeader title="GLENDA" />
+                                <CardMedia component="img" height="100%" image={Glenda} alt="Glenda screenshot" sx={{ objectFit: "contain" }} />
+                                <CardContent>
+                                    <Typography variant="h6">
+                                        Meal and Grocery Planning App
+                                    </Typography>
+                                    <Typography variant="body">
+                                        Allows users to search for recipes, assign recipes to a specific day, and compiles the weekly ingredients into a grocery list.
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <IconButton href="https://github.com/kearac-hub/Project-one">
+                                        <GitHubIcon fontSize="medium" color="secondary" /> 
+                                    </IconButton>
+                                    <IconButton href="https://kearac-hub.github.io/Project-one/">
+                                        <WebsiteIcon fontSize="medium" color="secondary" />
+                                    </IconButton>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         </Box>
